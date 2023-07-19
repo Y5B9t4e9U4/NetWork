@@ -5,17 +5,17 @@
 import pymysql
 
 # 建立与MySQL数据库的连接
-connection = pymysql.connect(host='localhost', user='root', password='asdhjjlkfjlaksd23@#433$#%#&^!*)(#)(P*()$al', db='工具人信息数据库')
+connection = pymysql.connect(host='localhost', user='root', password='asdhjjlkfjlaksd23@#433$#%#&^!*)(#)(P*()$al', db='image_lib')
 
 # 创建游标对象
 cursor = connection.cursor()
 
 # 读取图片文件
-with open('D:\\python\\NetWork\\resources\\aaa.jpg', 'rb') as file:
+with open('D:\\python\\NetWork\\resources\\杨玉环.jpg', 'rb') as file:
     image_data = file.read()
 
 # 执行INSERT语句
-sql = "INSERT INTO 图片 (文件数据) VALUES (%s)"
+sql = "INSERT INTO image(image_data2)  VALUES (%s)"
 cursor.execute(sql, (image_data,))
 
 # 提交事务
