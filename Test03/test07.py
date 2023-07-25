@@ -4,8 +4,8 @@
 # study：2023/7/18 17:20
 import pymysql
 
-# 建立与MySQL数据库的连接
 connection = pymysql.connect(host='localhost', user='root', password='asdhjjlkfjlaksd23@#433$#%#&^!*)(#)(P*()$al', db='image_lib')
+# 建立与MySQL数据库的连接
 
 # 创建游标对象
 cursor = connection.cursor()
